@@ -2,8 +2,8 @@
 Load and Chunk utils
 """
 
-from tqdm import tqdm
 from glob import glob
+from tqdm import tqdm
 
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
