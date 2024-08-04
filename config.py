@@ -16,6 +16,7 @@ VERBOSE = True
 
 LANG_SUPPORTED = ["en", "it", "es", "fr", "de", "el", "nl", "ro"]
 
+DOCS_DIR = "./docs"
 
 # for chunking
 # in chars
@@ -51,7 +52,6 @@ COLLECTION_NAME = "MY_BOOKS"
 LLM_MODEL_TYPE = "OCI"
 
 # OCI
-# OCI_GENAI_MODEL = "cohere.command"
 # OCI_GENAI_MODEL = "meta.llama-3-70b-instruct"
 # OCI_GENAI_MODEL = "cohere.command-r-16k"
 OCI_GENAI_MODEL = "cohere.command-r-plus"

@@ -56,7 +56,7 @@ def get_vector_store(docs, embed_model, collection_name="my_coll_name"):
     """
 
     # BM25 implementation
-    sparse_embeddings = FastEmbedSparse(model_name="Qdrant/BM25")
+    sparse_embeddings = FastEmbedSparse(model_name="Qdrant/bm25")
 
     qdrant = QdrantVectorStore.from_documents(
         docs,
