@@ -1,5 +1,5 @@
 """
-Test 01
+Prototype 01
 """
 
 from langchain_core.messages import HumanMessage, AIMessage
@@ -8,6 +8,7 @@ from factory import build_chain
 from chunk_utils import load_books_and_split
 from utils import get_console_logger
 from chat_history_queue import MessageQueue
+from jep_questions import QUESTIONS
 
 from config import DOCS_DIR, MAX_PAIRS_IN_CHAT
 
@@ -41,18 +42,8 @@ chat_history_queue = MessageQueue(MAX_PAIRS_IN_CHAT)
 # Processing
 #
 
-QUESTIONS = [
-    "Create a one-page summary of the JEP document. Organize the summary in bullet points.",
-    "Does the document contains a clear list of goals? List all the goals.",
-    "The document contains a well defined timeline?",
-    "What Oracle has to provide and has to do, as described in the document?",
-    "List any spelling or grammatical error you find in the document.",
-    "How would you rate the document based on clarity, completeness, grammar?",
-]
-
 logger.info("Processing questions...")
 logger.info("")
-
 
 for i, question in enumerate(QUESTIONS):
 

@@ -52,7 +52,7 @@ def get_vector_store(docs, embed_model, collection_name="my_coll_name"):
     """
     Create a QDRANT Vector Store for the Documents provided.
 
-    All in memory
+    All in memory. Hybrid Search.
     """
 
     # BM25 implementation

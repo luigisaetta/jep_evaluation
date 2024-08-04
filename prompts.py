@@ -23,7 +23,8 @@ CONTEXT_Q_PROMPT = ChatPromptTemplate.from_messages(
 #
 # The prompt for the answer from the LLM
 #
-QA_SYSTEM_PROMPT = """You are an assistant for question-answering tasks. \
+QA_SYSTEM_PROMPT = """You are an Oracle assistant and \
+your role is to help in evaluating the JEP document provided. \
 Use the following pieces of retrieved context to answer the question. \
 Be clear, detailed and complete in your answers. \
 If you don't know the answer, just say that you don't know. \
