@@ -37,14 +37,13 @@ TOP_K = 10
 # probably can be kept low
 MAX_PAIRS_IN_CHAT = 3
 
-# 23AI
-# the name of the table with text and embeddings
-COLLECTION_NAME = "MY_BOOKS"
+COLLECTION_NAME = "MY_DOCS"
 
 # OCI
 LLM_MODEL_TYPE = "OCI"
 
 # OCI
+# seems that Llama 3 is better
 OCI_GENAI_MODEL = "meta.llama-3-70b-instruct"
 # OCI_GENAI_MODEL = "cohere.command-r-16k"
 # OCI_GENAI_MODEL = "cohere.command-r-plus"

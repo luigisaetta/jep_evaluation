@@ -10,4 +10,5 @@ QUESTIONS = [
     "What does Oracle have to provide and do, as described in the document?",
     "List any spelling or grammatical errors you find in the document.",
     "How would you rate the document based on clarity, completeness and grammar?",
+    "Which suggestions would you provide to improve the document?",
 ]

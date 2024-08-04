@@ -46,8 +46,10 @@ logger.info("Processing questions...")
 logger.info("")
 
 for i, question in enumerate(QUESTIONS):
+    logger.info(f"Processing question: %s ...", i + 1)
 
-    print(f"--- Question n. {i+1}: {question}")
+    # using print so that we can redirect in a md file
+    print(f"## Question n. {i+1}: {question}")
     print("")
 
     input_msg = {
